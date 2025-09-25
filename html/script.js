@@ -18,7 +18,7 @@ async function loadInfo() {
       return;
     }
 
-    const infoUrl = `https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO/branch/repo/${id}/info.txt`;
+    const infoUrl = `../repo/${id}/info.txt`;
 
     const res = await fetch(infoUrl);
     if (!res.ok) throw new Error("Info not found");
