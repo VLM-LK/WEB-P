@@ -18,7 +18,7 @@ async function loadInfo() {
       return;
     }
 
-    const infoUrl = `../repo/${id}/info.txt`;
+    const infoUrl = `https://raw.githubusercontent.com/VLM-LK/WEB-P/branch/repo/${id}/info.txt`;
 
     const res = await fetch(infoUrl);
     if (!res.ok) throw new Error("Info not found");
